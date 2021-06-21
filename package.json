@@ -1,0 +1,27 @@
+{
+  "name": "js-animations",
+  "version": "1.0.0",
+  "description": "Collection of JS Animations",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kevindugan/JS-Animations.git"
+  },
+  "author": "Kevin J. Dugan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kevindugan/JS-Animations/issues"
+  },
+  "homepage": "https://github.com/kevindugan/JS-Animations#readme",
+  "dependencies": {
+    "@hapi/hapi": "^20.1.4",
+    "@hapi/inert": "^6.0.3",
+    "@hapi/vision": "^6.1.0",
+    "eslint": "^7.29.0",
+    "handlebars": "^4.7.7"
+  }
+}
