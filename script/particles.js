@@ -43,6 +43,7 @@ class Particle {
             this.directionY = -this.directionY;
         }
 
+        let speedFactor = 1.0;
         let radiusX = this.x - mouse.x;
         let radiusY = this.y - mouse.y;
         let dist = Math.sqrt(radiusX*radiusX + radiusY*radiusY);
@@ -54,10 +55,12 @@ class Particle {
                 this.directionX -= 2.0 * projectionLength * radiusX;
                 this.directionY -= 2.0 * projectionLength * radiusY;
             }
+
+            speedFactor = 3.0;
         }
 
-        this.x += this.directionX;
-        this.y += this.directionY;
+        this.x += this.directionX * speedFactor;
+        this.y += this.directionY * speedFactor;
 
         this.draw();
     }

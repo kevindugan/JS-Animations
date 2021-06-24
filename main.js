@@ -31,6 +31,14 @@ const init = async () => {
         },
         {
             method: "GET",
+            path: "/tree",
+            handler: (request, h) => {
+
+                return h.view("searchTree", {hostName: `${os.hostname}`});
+            }
+        },
+        {
+            method: "GET",
             path: "/css/{file}",
             handler: (request, reply) => {
                 return reply.file("./css/" + request.params.file);
